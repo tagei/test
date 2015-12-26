@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>main</title>
+        <link rel="stylesheet" type="text/css" href="../css/style.css">
+    </head>
+    <body>
+        <div class="iframecontent">
+            <div class="pos">
+                <span>系统设置</span><i> | </i><span>网站设置</span><i> > </i>
+            </div>
+          <div class="wangzhan clearfix" id="wangzhan">
+          	<ul>
+          		<li class="wangzhan_li"><a href="#" >站点配置</a></li>
+          		<li><a href="#">核心配置</a></li>
+          		<li><a href="#">邮箱配置</a></li>
+          		<li><a href="#">会员配置</a></li>
+          		<li><a href="#">其他配置</a></li>
+          	</ul>
+          </div>
+
+          <div class="clearfix left wzpz" id="wzpz">
+          	<div class="wzpzli">
+          	<dl>
+          		<dt class="left">网站名称：</dt>
+          		<dd class="left">
+          			<input name="" value="我的网站">
+          		</dd>
+          	</dl>
+          		<dl>
+          		<dt class="left">网站域名：</dt>
+          		<dd class="left">
+          			<input name="" value="http://www.yxmen">
+          		</dd>
+          	</dl>
+          		<dl>
+          		<dt class="left">网站标题：</dt>
+          		<dd class="left">
+          			<input name="" value="我的标题">
+          		</dd>
+          	</dl>
+          		<dl>
+          		<dt class="left">&nbsp;&nbsp;&nbsp;关键词：</dt>
+          		<dd class="left">
+          			<input name="" value="我的网站">
+          		</dd>
+          	</dl>
+          </div>
+           <div class="wzpzli"  style="display:none;">
+          	<dl>
+          		<dt class="left">关闭网站：</dt>
+          		<dd class="left">
+          			<input name="" value="" type="radio">是
+          			<input name="" value="" type="radio">否
+          		</dd>
+          	</dl>
+          		<dl>
+          		<dt class="left">关站提示：</dt>
+          		<dd class="left">
+          			<input name="" value="维护中。。。">
+          		</dd>
+          	</dl>
+          		<dl>
+          		<dt class="left">禁用语言：</dt>
+          		<dd class="left">
+          			<input name="" value="你妈">
+          		</dd>
+          	</dl>
+          </div>
+          	 <div class="wzpzli"  style="display:none;">
+          	<dl>
+          		<dt class="left">邮箱地址：</dt>
+          		<dd class="left">
+          			<input name="" value="dd@qq.com">
+          		</dd>
+          	</dl>
+          		<dl>
+          		<dt class="left">发件人：</dt>
+          		<dd class="left">
+          			<input name="" value="战马">
+          		</dd>
+          	</dl>
+          	
+          </div>
+        </div>
+            <script type="text/javascript" src="../../jquery.js"></script>
+    <script>
+    $(function(){
+    	$('#wangzhan li').click(function(){
+    		//alert('nn');
+    		var _id = $(this).index();
+    		$(this).addClass('wangzhan_li').siblings().removeClass('wangzhan_li');
+    		$('#wzpz').children('.wzpzli').eq(_id).fadeIn('fast').siblings('.wzpzli').css('display','none');
+    	})
+    })
+    </script>
+    </body>
+  
+</html>
+         
