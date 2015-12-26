@@ -1,0 +1,70 @@
+<html>
+<head>
+	<title>Form</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<link rel="stylesheet" type="text/css" href="form_1.css">
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="jquery.validate.min.js"></script>
+</head>
+<body>
+	<form id="myform" method="post" action="">
+		<p>
+			<label for="username">&nbsp;用户名：</label>
+			<input id="username" name="username" class="username"/>
+		</p>
+		<p>
+			<label for="password">密&nbsp;&nbsp;码：</label>
+			<input id="password" name="password" class="password" type="password"/>
+		</p>
+		<p>
+			<label for="confirm_password">确认密码：</label>
+			<input id="confirm_password" name="confirm_password" class="confirm_password" type="password"/>
+		</p>
+		<p>
+			
+			<input id="submit" name="submit" class="submit" type="submit" value="登录"/>
+		</p>
+
+	</form>
+</body>
+</html>
+<script type="text/javascript">
+$(function(){
+	var validate = $("#myform").validate({
+		submitHandler:function(form){
+			alert("提交表单");
+			form.submit();
+		},
+		rules:{
+			username:{
+				required:true
+			},
+			password:{
+				required:true,
+				minlength:[3,10]
+			},
+			confirm_password:{
+				required:true,
+				minlength:[3,10],
+				equalTo:"#password"
+			}
+		},
+			messages:{
+				username:{
+					required:"请输入用户名"
+				},
+				password:{
+					required:"密码不能为空",
+					minlength:"密码最少3个字符最多10个字符"
+				},
+				confirm_password:{
+					required:"请确认密码",
+					minlength:"密码最少3个字符最多10个字符",
+					equalTo:"两次密码不一致"
+				},
+			}
+		
+	})
+})
+
+</script>

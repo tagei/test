@@ -1,0 +1,362 @@
+/*css初始化*/
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	margin: 0;
+	padding: 0;
+}
+blockquote,q {quotes: none;}
+blockquote:before,blockquote:after,q:before,q:after {content: none;}
+table {border-collapse: collapse;border-spacing: 0;}
+/**CSS Reset 结束**/
+/*公共样式*/
+	body,th,td,button,input,select,textarea{
+		font:12px/1.62 "Microsoft Yahei","Hiragino Sans GB","Helvetica Neue",
+		Helvetica,tahoma,arial,Verdana,sans-serif;color: #333;}
+		ul,ol{list-style: none;}
+		img{border: 0;vertical-align: middle;}
+	a{text-decoration: none;outline: none;blr:expression(this.onFocus=this.blur());}
+	.left,.l{float: left;}
+	.right,.r{float: right;}
+	h1{font-size:36px; }
+	h2{font-size: 30px;}
+	h3{font-size: 24px;}
+	h4{font-size: 18px;}
+	h5{font-size: 14px;}
+	.clearfix:after,.cf:after{content: "";clear: both;display: block;visibility: hidden;height: 0;}
+	.clearfix,.cf{zoom:1;}
+	.clear,.cl{clear: both;}
+	/*公共样式结束*/
+	/*登录界面样式*/
+	.login{
+		width: 500px;
+		height: 400px;
+		background: #1E90FF;
+		margin: 100px auto; 
+	}
+	.loginmain{
+		padding: 20px;
+		color: #fff;
+		font-size: 14px;
+	}
+	.loginmain ul li{
+		padding: 20px;
+	}
+	.loginmain ul li input[type="text"],.loginmain ul li input[type="password"]{
+		width: 250px;
+		height: 30px;
+	}
+	.loginmain ul li img{
+		margin-left: 90px;
+	}
+	.loginmain ul li input[type="button"]{
+		width: 60px;
+		height: 40px;
+		margin-left: 90px;
+		background: #696969;
+		cursor: pointer;
+
+	}
+	.loginmain ul li input[type="button"]:hover{
+		background: #5F9EA0;
+	}
+	/*顶部导航*/
+	.head{
+		width: 100%;
+		height: 63px;
+		background: #0f92d6;
+
+
+	}
+	.headlogo{
+		width: 183px;
+		height: 60px;
+		line-height: 60px;
+		text-align: center;
+
+	}
+	.head a{
+		color: #fff;
+	}
+	.head .headnav li{
+		float: left;
+		margin-right: 5px;
+	}
+	.head .headnav li a{
+		display: block;
+		width:70px;
+		padding:35px 0 5px 0;
+		background: #22b7eb url(../img/ico_bg.png)no-repeat;
+		text-align: center;
+		
+	}
+	/*图片定位*/
+	.head .headnav li#menu_0 a{
+		background-position:center -95px; 
+	}
+	.head .headnav li#menu_1 a{
+		background-position:center -195px; 
+	}
+	.head .headnav li#menu_2 a{
+		background-position:center -295px; 
+	}
+	.head .headnav li#menu_3 a{
+		background-position:center -395px; 
+	}
+    .head .headnav li.current-menu a {
+    	width: 120px;
+    	background-color:#62d2f9; 
+    }
+.head .headnav li a:hover{
+	background-color: #62d2f9;
+}
+.headlink li {
+	float: left;
+	margin-left: 15px;
+}
+.headlink li a{
+	display: block;
+	padding-left: 20px;
+	background:url(../img/main_link_ico.png)no-repeat; 
+}
+.headlink{
+	margin: 30px 10px 0 0;
+}
+.headlink li#link_0 a{
+	background-position: 0 0;
+}
+.headlink li#link_1 a{
+	background-position: 0 -148px;
+}
+.headlink li#link_2 a{
+	background-position: 0 -48px;
+}
+.headlink li#link_3 a{
+	background-position: 0 -190px;
+}
+.headlink li#link_4 a{
+	background-position: 0 -98px;
+}
+/*顶部导航结束*/
+/*left导航*/
+.leftmenu{
+	width: 187px;
+	position: absolute;
+	top: 70px;
+	left: 0;
+	bottom: 0;
+	z-index: 99;
+
+	background: url(../img/left_bg.png) repeat-y;
+	overflow-x:hidden;
+	overflow-y:auto;  
+}
+.leftmenu dl dt{
+	width: 187px;
+	height: 26px;
+	line-height: 26px;
+	text-indent: 20px;
+	font-weight: bold;
+	color: #fff;
+	background: #009beb url(../img/ico_small.png) right 10px no-repeat;
+	font-size: 14px;
+	cursor: pointer;
+
+}
+.leftmenu dl dd ul li{
+	width: 170px;
+	height: 26px;
+	float: right;
+	line-height: 26px;
+	text-indent: 10px;
+}
+.leftmenu dl dd ul{
+	padding: 5px 0;
+}
+.leftmenu dl dd ul li a{
+	width: 169px;
+	height: 24px;
+	line-height: 24px;
+color: #333;
+display: block;/*鼠标放上，右边框没有*/
+background: #EDFBFF;
+
+}
+.leftmenu dl dd ul li a:hover{
+	color: #009beb;
+	border-top: 1px solid #B8C8D2;
+	border-left: 1px solid #B8C8D2;
+	border-bottom: 1px solid #B8C8D2;
+}
+/*右侧主体样式*/
+/*公共样式*/
+.text-left{
+	text-align: left;
+}
+.text-right{
+	text-align: right;
+}
+.text-center{
+	text-align: center;
+}
+.btn{
+	padding: 3px 15px;
+	border: 0;
+}
+.btn-blue{
+	background: #0D9AE4;
+	color: #fff;
+	cursor: pointer;
+}
+.btn-blue:hover{
+	background: #0084C9;
+}
+.table{
+	border-top: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+}
+.table tr{
+	border-bottom: 1px solid #ccc;
+}
+.table tr:hover{
+	background: #eee;
+}
+.table th{
+	height: 35px;
+	line-height: 35px;
+	font-size: 14px;
+	font-weight: bold;
+	background: #eee;
+}
+.table td{
+	height: 35px;
+	line-height: 35px;
+	
+}
+.page{
+	height: 35px;
+	line-height: 35px;
+	border-bottom: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+}
+/*公共样式结束*/
+.rightmain{
+	position: absolute;
+	top: 63px;
+	left: 187px;
+	bottom: 0;
+	right: 0;
+	overflow: hidden;
+
+}
+body.showleftmenu .rightmain{
+	left: 187px;
+}
+body.hideleftmenu .rightmain{
+	left: 0;
+}
+.rightcontent{
+	height: 100%;
+	padding: 7px 0 0 7px;
+}
+.rightcontent iframe{
+	height: 100%;
+	width: 100%;
+}
+.maincol{
+	width: 49%;
+	margin-right: 0.5%;
+	color: #fff;
+}
+.maincol dl{
+	padding: 5px;
+	margin-bottom: 10px;
+}
+.maincol-left dl{
+ background: #3C99F5;
+}
+.maincol dl dt{
+	font-size: 18px;
+	line-height: 2em;
+	margin-bottom: 5px;
+}
+.maincol-right dl{
+background: #06A520;
+}
+/*栏目管理*/
+.pos{
+	height: 35px;
+	line-height: 35px;
+	padding-left:20px;
+	background: url(../img/icon_home.png) left center no-repeat;
+	font-size: 14px; 
+	color: #00FFFF;
+	font-weight:bold;
+	border-bottom: 1px solid #ccc;
+}
+.opreate,.tablewrap{
+	margin: 10px;
+}
+/*公司介绍*/
+.gsjs_title{
+	width: 10%;
+}
+.list{
+	margin: 50px 50px;
+
+}
+.textarea-default{
+	width: 500px;
+	height: 200px;
+	
+}
+.editor{
+	width: 500px;
+	height: 90px;
+}
+.butdd{
+	margin-top:200px;
+	margin-left: 100px;	
+}
+.butdd input{
+	width: 60px;
+	height: 30px;
+	cursor: pointer;
+}
+.butdd input:hover{
+	background: #ccc;
+}
+.wangzhan{
+	padding: 10px;
+}
+.wangzhan li{
+	float: left;
+	width: 60px;
+	height: 30px;
+	line-height: 30px;
+	background: #ccc;
+	margin-right: 10px;
+
+}
+.wangzhan li a{
+	color: #333;
+}
+.wangzhan li.wangzhan_li{
+	background: #fff;
+	border-top: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+}
+.wzpz{
+	padding: 10px;
+	width: 200px;
+
+}
+.wzpz dl dd{
+	margin: 10px;
+	width: 100px;
+}
