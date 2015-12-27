@@ -134,6 +134,12 @@ a{
 	cursor: pointer;
 	
 }
+
+.home button{
+visibility: hidden;
+
+}
+
 .left{
 	margin-top: 20px;
 	width: 70%;
@@ -169,9 +175,10 @@ a{
 .center_li li{
 	border-bottom:1px dashed #ccc;
 	width: 700px;
-	height: 60px;
-	line-height: 60px;
+	height: 50px;
+	line-height:20px;
 }
+
 .center_li li a:hover{
 	text-decoration: underline;
 	color: #7FFF00;
@@ -179,6 +186,19 @@ a{
 .center_li li img{
 	float: left;
 	margin-right: 20px;
+}
+.center_li li .lip{
+	font-size: 14px;
+}
+.center_li li .ptime{
+	font-size: 12px;
+	color: 	#778899;
+}
+.center_li .pic{
+	font-family:"xiao";
+	font-size: 12px;
+	float: right;
+	cursor: pointer;
 }
 .right{
 	margin-top: 20px;	
